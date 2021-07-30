@@ -347,23 +347,8 @@
 
 							<div class="card-body">
 								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>ICP Involvement:</label>
-											<select  data-placeholder="Select ICP Involvement"
-												class="form-control select-search" data-fouc>
-												<option></option>
-												<option value="ICP-Provider">ICP Provider
-												</option>
-												<option value="ICP-Recipient">ICP Recipient
-												</option>
-												<option value="Potential-ICP-Recipient">Potential ICP Recipient</option>
-												<option value="None">None</option>
-											</select>
-										</div>
-									</div>
-
-									<div class="col-md-6">
+									
+									<div class="col-md-4">
 										<div class="form-group">
 											<label>Organization / Company Name:</label>
 											<input type="text" class="form-control" placeholder="Gamuda Sdn Bhd"
@@ -371,14 +356,67 @@
 										</div>
 									</div>
 
-									<div class="col-md-6">
+									<div class="col-md-4">
 										<div class="form-group">
 											<label>Company Registration Number(SSM) / Unique ID:</label>
 											<input type="text" class="form-control" placeholder="201901000005" disabled>
 										</div>
 									</div>
 
-									<div class="col-md-12">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>Organization / Company Type:</label>
+											<select data-placeholder="Select organization / company type"
+												class="form-control select-search" data-fouc>
+												<option></option>
+												<option value="Enterprise (Sole Proprietorship)">Enterprise (Sole
+													Proprietorship)</option>
+												<option value="Enterprise (Partnership)">Enterprise (Partnership)
+												</option>
+												<option value="Sendirian Berhad (Sdn Bhd)/Private Limited Company">
+													Sendirian Berhad (Sdn Bhd)/Private Limited Company</option>
+												<option value="Company Limited by Guarantee (CLG)">Company Limited by
+													Guarantee (CLG)</option>
+
+												<option value="Sendirian (Sdn) / Unlimited Company">Sendirian (Sdn) /
+													Unlimited Company</option>
+												<option value="Berhad (Bhd) / Public Limited Company">Berhad (Bhd) /
+													Public Limited Company</option>
+												<option value="Foreign Company">Foreign Company</option>
+												<option
+													value="Perkongsian Liabiliti Terhad (PLT) / Limited Liability Partnership (LLP)">
+													Perkongsian Liabiliti Terhad (PLT) / Limited Liability Partnership
+													(LLP)</option>
+												<option
+													value="Consortium / joint venture (between local contractor companies)">
+													Consortium / joint venture (between local contractor companies)
+												</option>
+												<option
+													value="Consortium / joint venture (between local and foreign contractors)">
+													Consortium / joint venture (between local and foreign contractors)
+												</option>
+
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="form-group">
+											<label>Business Proposition & Development:</label>
+											<div class="custom-file">
+												<input type="file" class="custom-file-input" id="customFile">
+												<label class="custom-file-label" for="customFile">Choose
+													file</label>
+											</div>
+											<span class="form-text text-muted">Accepted formats: pdf. docx. Max
+												file
+												size
+												15Mb</span>
+										</div>
+									</div>
+
+
+									<div class="col-md-6">
 										<div class="form-group">
 											<label>Organization / Company Image (Logo):</label>
 											<div class="custom-file">
@@ -386,37 +424,16 @@
 												<label class="custom-file-label" for="customFile">Choose
 													file</label>
 											</div>
-											<span class="form-text text-muted">Accepted formats: Jpg. docx. Max
+											<span class="form-text text-muted">Accepted formats: jpg. png. Max
 												file
 												size
 												15Mb</span>
 										</div>
 									</div>
 
-									<div class="col-md-4">
-										<div class="form-group">
-											<label>Organization / Company Type:</label>
-											<select 
-												data-placeholder="Select organization / company type"
-												class="form-control select-search" data-fouc>
-												<option></option>
-												<option value="Enterprise (Sole Proprietorship)">Enterprise (Sole Proprietorship)</option>
-												<option value="Enterprise (Partnership)">Enterprise (Partnership)</option>
-												<option value="Sendirian Berhad (Sdn Bhd)/Private Limited Company">Sendirian Berhad (Sdn Bhd)/Private Limited Company</option>
-												<option value="Company Limited by Guarantee (CLG)">Company Limited by Guarantee (CLG)</option>
+									
 
-												<option value="Sendirian (Sdn) / Unlimited Company">Sendirian (Sdn) / Unlimited Company</option>
-												<option value="Berhad (Bhd) / Public Limited Company">Berhad (Bhd) / Public Limited Company</option>
-												<option value="Foreign Company">Foreign Company</option>
-												<option value="Perkongsian Liabiliti Terhad (PLT) / Limited Liability Partnership (LLP)">Perkongsian Liabiliti Terhad (PLT) / Limited Liability Partnership (LLP)</option>
-												<option value="Consortium / joint venture (between local contractor companies)">Consortium / joint venture (between local contractor companies)</option>
-												<option value="Consortium / joint venture (between local and foreign contractors)">Consortium / joint venture (between local and foreign contractors)</option>
-
-											</select>
-										</div>
-									</div>
-
-									<div class="col-md-4">
+									<div class="col-md-6">
 										<label>Date of Incorporation:</label>
 										<div class="row">
 											<div class="col-md-12">
@@ -434,7 +451,7 @@
 										</div>
 									</div>
 
-									<div class="col-md-4">
+									<div class="col-md-6">
 										<div class="form-group">
 											<label>Organization / Company Status:</label>
 											<select name="position"
@@ -483,7 +500,7 @@
 									<div class="col-md-3">
 										<div class="form-group">
 											<label>Company Origin:</label>
-											<select  data-placeholder="Select company origin"
+											<select data-placeholder="Select company origin"
 												class="form-control select-search" data-fouc>
 												<option></option>
 												<option value="">-- select one --</option>
@@ -741,9 +758,15 @@
 										</div>
 									</div>
 
+									<div class="col-md-12">
+										<div class="font-weight-semibold h6">Manpower Classification</div>
+									</div>
+
+									
+
 									<div class="col-md-4">
 										<div class="form-group">
-											<label>% of Bumiputera Manpower:</label>
+											<label>% of Management Level:</label>
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="80">
 												<span class="input-group-append">
@@ -755,7 +778,7 @@
 
 									<div class="col-md-4">
 										<div class="form-group">
-											<label>% of Non-Bumiputera Manpower:</label>
+											<label>% of Technical:</label>
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="15">
 												<span class="input-group-append">
@@ -767,13 +790,83 @@
 
 									<div class="col-md-4">
 										<div class="form-group">
-											<label>% of Foreign Manpower:</label>
+											<label>% of Support Staff:</label>
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="5">
 												<span class="input-group-append">
 													<span class="input-group-text">%</span>
 												</span>
 											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Bumiputera Manpower:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="30">
+												
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Non-Bumiputera Manpower:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="15">
+												
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="form-group">
+											<label>No. of Foreign Manpower:</label>
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="25">
+												
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+
+										<div class="d-flex justify-content-between align-items-center mb-2">
+											<span class="font-weight-semibold h6">ICP Involvement</span>
+											<button type="button" class="btn bg-light btn-icon rounded-round mt-1"
+												data-toggle="modal" data-target="#addICPInvolvement"><i class="icon-plus3"
+													data-popup="tooltip" data-original-title="Add"></i></button>
+										</div>
+										<div class="table-responsive mb-4">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>ICP Involvement Type</th>
+														<th>Year of Involvement</th>
+														<th>Program Name</th>
+														<th>Program Code</th>
+														<th class="action-icon-width">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>ICP Recipient</ted>
+														<td>2021</ted>
+														<td>Program ABC</ted>
+														<td>P13231312</ted>
+														<td>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-compose" data-popup="tooltip" title=""
+																	data-original-title="Edit"></i></button>
+															<button type="button" class="btn btn-light btn-icon"><i
+																	class="icon-trash-alt" data-popup="tooltip" title=""
+																	data-original-title="Delete"></i></button>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
 										</div>
 									</div>
 
@@ -792,7 +885,7 @@
 														<th>Type of Shareholder</th>
 														<th>Date of Registration / Incorporation</th>
 														<th>Organization Name</th>
-														<th>SSM / Reg. No</th>
+														<th>SSM / Reg No.</th>
 														<th>% of Shareholding</th>
 														<th class="action-icon-width">Action</th>
 													</tr>
@@ -1005,6 +1098,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="card-footer  d-sm-flex justify-content-sm-between align-items-sm-center">
 								<ul
 									class="pagination pagination-sm pagination-pager pagination-pager-linked justify-content-between">
@@ -1108,7 +1202,7 @@
 
 									<div class="col-md-12">
 										<div class="form-group">
-											<label>SSM / Reg.No:</label>
+											<label>SSM / Reg No.:</label>
 											<input type="text" class="form-control" placeholder="Example. 1112231312">
 										</div>
 									</div>
@@ -1524,10 +1618,10 @@
 									<div class="col-md-12">
 										<div class="form-group">
 											<label>Project Duration:</label>
-											<select  data-placeholder="Select project duration"
-												class="form-control select-search" data-fouc>
+											<select data-placeholder="Select project duration"
+												class="form-control select" data-fouc>
 												<option></option>
-												<option value="#">-- select one --</option>
+												
 												<option value="#">Less than 1 Year</option>
 												<option value="#">1 Year</option>
 												<option value="#">1-2 Years</option>
@@ -1553,5 +1647,78 @@
 	</div>
 </div>
 <!-- /full width modal -->
+
+<!-- Full width modal/ ICP Involvement -->
+<div id="addICPInvolvement" class="modal fade" tabindex="-1">
+	<div class="modal-dialog  modal-full">
+		<div class="modal-content">
+
+
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+						<div class="card">
+							<div class="card-header bg-white header-elements-inline">
+								<h5 class="card-title font-weight-bold">Add ICP Involvement
+								</h5>
+							</div>
+							<div class="card-body">
+								<form action="#">
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>ICP Involvement Type:</label>
+											<select data-placeholder="Select Product / Services"
+												class="form-control select"
+												data-fouc>
+												<option value="ICP Provider">ICP Provider</option>
+												<option value="ICP REcipient">ICP Recipient</option>
+												<option value="Potential ICP REcipient">Potential ICP Recipient</option>
+												<option value="None">None</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Year of Involvment:</label>
+											<input type="text" class="form-control" placeholder="2013">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Program Name</label>
+											<input type="text" class="form-control" placeholder="Program ABC">
+										</div>
+									</div>
+
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Program Code</label>
+											<input type="text" class="form-control" placeholder="P123817">
+										</div>
+									</div>
+
+
+
+									
+
+								</form>
+								<div class="text-right">
+									<button type="submit" class="btn btn-light" class="remove"
+										data-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /full width modal -->
+
 
 </html>
